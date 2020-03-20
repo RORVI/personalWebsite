@@ -79,6 +79,16 @@ label {
     margin-bottom: 20px;
 }
 
+.emailForm {
+    margin: 0px;
+    width: 70%;
+    padding-left: 0px;
+}
+
+.contactConstraints {
+    margin-left: 2%;
+}
+
 .form-control {
     height: 40px;
     font-size: 18px;
