@@ -75,6 +75,31 @@ label {
     font-weight: 400;
 }
 
+input,
+textarea {
+    display: block;
+    margin: 1em;
+}
+
+input[type="text"] {
+    border: 0;
+    padding: 1em;
+}
+
+input[type="email"] {
+    border: 0;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+:focus {
+    background: purple;
+    transition: background .25s;
+}
+
+
+/* form style */
+
 .form-group {
     margin-bottom: 20px;
 }
