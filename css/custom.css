@@ -75,25 +75,19 @@ label {
     font-weight: 400;
 }
 
-input,
-textarea {
-    display: block;
-    margin: 1em;
-}
-
-input[type="text"] {
+.emailInput {
     border: 0;
     padding: 1em;
 }
 
-input[type="email"] {
+.messageInput {
     border: 0;
     padding: 1em;
     border-radius: 8px;
 }
 
 :focus {
-    background: purple;
+    background: gray;
     transition: background .25s;
 }
 
