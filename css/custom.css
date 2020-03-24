@@ -89,9 +89,14 @@ label {
     height: 250px;
 }
 
-:focus {
-    background: rgb(228, 228, 228);
-    transition: background .25s;
+
+/* Styling for the tooltips*/
+
+
+/* Styling for the tooltips*/
+
+.card {
+    font-size: 15px;
 }
 
 
