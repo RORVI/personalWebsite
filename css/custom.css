@@ -178,7 +178,7 @@ body {
     width: 250px;
     height: 250px;
     z-index: 10;
-    position: absolute;
+    position: fixed;
     left: 25%;
     top: 40%;
     background: url(../images/ovidiu_portrait.jpg);
