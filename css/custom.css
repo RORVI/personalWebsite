@@ -139,6 +139,15 @@ label {
     transition: all 0.5s;
 }
 
+.panel,
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+    border: none;
+}
+
+body {
+    background: #F9F9F9;
+}
+
 
 /* loader */
 
