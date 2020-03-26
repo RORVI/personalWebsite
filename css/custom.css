@@ -99,6 +99,17 @@ label {
     font-size: 15px;
 }
 
+.collapseHeader:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    float: right;
+}
+
+.collapseHeader.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067";
+}
+
 
 /* form style */
 
