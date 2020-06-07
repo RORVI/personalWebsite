@@ -192,10 +192,6 @@ body {
     position: fixed;
     left: 15%;
     top: 40%;
-    background: url(../images/ovidiu_portrait.jpg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 100% 100%;
     border-radius: 50% 50% 50% 50%;
     vertical-align: baseline;
 }
