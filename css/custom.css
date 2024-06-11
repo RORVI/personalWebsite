@@ -192,6 +192,7 @@ label {
   
   
   .skills-section {
+    max-height: calc(100vh - 40px);
     width: 80%;
     margin: 20px auto;
     background-color: #fff;
