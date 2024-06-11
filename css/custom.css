@@ -376,6 +376,15 @@ body {
     height: 40px;
 }
 
+.social-icons {
+    margin: 10px; /* Add margin around each social icon */
+}
+
+.rotating {
+    display: inline-block;
+    margin: 10px; /* Add margin around the rotating container */
+}
+
 .home-text {
     text-align: center;
     margin-top: 20vh;
