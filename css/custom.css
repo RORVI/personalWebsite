@@ -169,7 +169,7 @@ label {
   .content {
     flex: 1 1 auto; /* Allow flexibility for resizing */
     padding: 10px; /* Adjust padding as needed */
-    max-width: calc(100% - 170px); /* Ensure content and avatar fit within the container */
+    max-width: 100%; /* Ensure content and avatar fit within the container */
   }
   
   /* Ensure proper layout on smaller screens */
@@ -196,6 +196,7 @@ label {
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
+    overflow-y: auto;
 }
 .skills-section h1 {
     text-align: center;
@@ -234,8 +235,8 @@ label {
 .skills-section .content {
     padding: 0 18px;
     display: block; /* Make sections unfolded by default */
-    overflow: hidden;
     background-color: #f9f9f9;
+    overflow-y: auto;
 }
 .skills-section ul {
     list-style-type: none;
@@ -539,8 +540,23 @@ body {
     margin-top: 45px;
 }
 
-.event-tab .tab-content .tab-pane {
+.event-tab .tab-content {
     margin-bottom: 30px;
+}
+
+.tab-pane {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.contact-tab-pane {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-motto {
