@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
     <meta name="google-site-verification" content="KcEzrh6GP1skOFgbuwRrcCnJ7NZkhatCkjfmbdY8QkQ" />
@@ -51,6 +51,7 @@
     </script>
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/ror.ico">
     <link rel="stylesheet" href="./plugins/fontawesome_5_9_0/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brand_colors.css">
     <script type="text/javascript">
@@ -79,7 +80,9 @@
     </div>
 
     <div class="col-sm-5">
-        <img src="images/ovidiu_portrait.jpg" class="rounded-circle portrait">
+        <div class="container">
+            <img src="images/ovidiu_portrait.jpg" class="rounded-circle portrait">
+        </div>
     </div>
 
     <div class="container-fluid">
@@ -92,7 +95,7 @@
                     <div class="event-tab">
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="tab-control"><a href="#hi" aria-controls="hi" role="tab" data-toggle="tab">Home</a></li>
+                            <li role="presentation" class="tab-control active"><a href="#hi" aria-controls="hi" role="tab" data-toggle="tab">Home</a></li>
                             <li role="presentation" class="tab-control"><a href="#skills" aria-controls="skills" role="tab" data-toggle="tab">Skills</a></li>
                             <li role="presentation" class="tab-control"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact Me</a></li>
                         </ul>
@@ -100,375 +103,128 @@
                         <!-- Tab panes -->
                         <div class="tab-content scrollbar" id="style-1">
                             <div role="tabpanel" class="tab-pane fade in active show" id="hi">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="slimScroll" data-color="rgba(255,255,255,0.95)" style="overflow: hidden; width: auto;">
-                                            <section class="hero-header animatedParent animateOnce overflow-hide">
-                                                <div class="table">
-                                                    <div class="header-text">
-                                                        <h2 class="text-main-medium">Hello! <br></h2>
-                                                        <h2 class="text-main-medium">I am Roman Ovidiu-Robert and</h2>
-                                                        <h1 class="text-main-big font-weight-bolder name-adjust">"Changing lives <br> for the better <br> with software"</h1>
-                                                        <h2 class="text-main-medium">is my mission!<br></h2>
-                                                        <p class="text-main-small bg-danger badge s-18 thin text-white">Fullstack Software Engineer</p>
-
-                                                        <br>
-                                                        <div>
-                                                            <a href="https://linkedin.com/in/ovidiu-robert-roman" class="social-icons socialista">
-                                                                <div class="rotating"><i class="fab fa-linkedin linked-in fa-4x"></i></div>
-                                                            </a>
-                                                            <a href="https://github.com/RORVI" class="social-icons socialista">
-                                                                <div class="rotating"><i class="fab fa-github github fa-4x"></i></div>
-                                                            </a>
-                                                            <a href="https://medium.com/@ovidiurobert.roman" class="social-icons socialista">
-                                                                <div class="rotating"><i class="fab fa-medium medium fa-4x"></i></div>
-                                                            </a>
+                                <div class="home-motto">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="slimScroll" data-color="rgba(255,255,255,0.95)" style="overflow: hidden; width: auto;">
+                                                <section class="hero-header animatedParent animateOnce overflow-hide">
+                                                    <div class="table">
+                                                        <div class="header-text">
+                                                            <h2 class="text-main-medium">Hello! <br></h2>
+                                                            <h2 class="text-main-medium">I am Roman Ovidiu-Robert and</h2>
+                                                            <h1 class="text-main-big font-weight-bolder name-adjust">"Changing lives <br> for the
+                                                                better <br> with software"</h1>
+                                                            <h2 class="text-main-medium">is my mission!<br></h2>
+                                                            <p class="text-main-small bg-danger badge s-18 thin text-white">Fullstack Software
+                                                                Engineer</p>
+                            
+                                                            <br>
+                                                            <div>
+                                                                <a href="https://linkedin.com/in/ovidiu-robert-roman"
+                                                                    class="social-icons socialista">
+                                                                    <div class="rotating"><i class="fab fa-linkedin linked-in fa-4x"></i></div>
+                                                                </a>
+                                                                <a href="https://github.com/RORVI" class="social-icons socialista">
+                                                                    <div class="rotating"><i class="fab fa-github github fa-4x"></i></div>
+                                                                </a>
+                                                                <a href="https://medium.com/@ovidiurobert.roman" class="social-icons socialista">
+                                                                    <div class="rotating"><i class="fab fa-medium medium fa-4x"></i></div>
+                                                                </a>
+                                                            </div>
                                                         </div>
-
                                                     </div>
-
-                                                </div>
-                                            </section>
+                                                </section>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div role="tabpanel" class="tab-pane fade fs-20" id="skills">
-                                <div class="row mbc-5">
-                                    <div class="col-md-12">
-                                        <h1 class="d-flex flex-row mb-3 skill-underline">
-                                            <div class="">
+                                <section id="skills" class="skills-section">
+    
+                                        <div class="skills-container">
+                                            <button type="button" class="collapsible active"><i class="fas fa-user-tie icon"></i> Leadership & Team Management</button>
+                                            <div class="content" style="display: block;">
+                                                <ul>
+                                                    <li>
+                                                        <span class="skill-title">IBM:</span> Led backend delivery for an international distributor and e-commerce solutions, supervising teams of up to 5 developers. Established coding standards, conducted reviews, and provided mentorship. Coordinated with squads and conducted interviews for senior positions.
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="p-2">
-                                                <p class="technology-title font-weight-bolder">JavaScript</p>
+                                            <button type="button" class="collapsible active"><i class="fas fa-server icon"></i> Backend Development</button>
+                                            <div class="content" style="display: block;">
+                                                <ul>
+                                                    <li>
+                                                        <span class="skill-title">IBM:</span> Developed components for PoC platforms for airlines and car rentals, integrating multiple third-party services. Extensively used CommerceTools, OpenAPI, Docker, and MariaDB.
+                                                    </li>
+                                                    <li>
+                                                        <span class="skill-title">Thinslices:</span> Created backend for financial assets management application using Node.js, YugabyteDB, and MongoDB.
+                                                    </li>
+                                                    <li>
+                                                        <span class="skill-title">OSF Digital:</span> Full-stack development with .NET Core and Angular, focusing on integrations with Sage Intacct. Worked on AWS and Google Cloud services for data scientists.
+                                                    </li>
+                                                    <li>
+                                                        <span class="skill-title">Silicon Service:</span> Developed automotive virtual dashboards, contributing to architecture design and system optimization.
+                                                    </li>
+                                                </ul>
                                             </div>
-                                        </h1>
-
-                                        <div class="d-flex flex-column mb-3">
-                                            <div class="card-transparent border-0">
-                                                <div class="row no-gutters">
-                                                    <div class="col-auto">
-                                                        <img src="images/icons/angular.png" class="img-fluid" alt="">
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="card-block px-2">
-                                                            <p class="card-title technology">Angular (0.5 years of experience)</p>
-                                                            <div class="card-text">
-                                                                <ul>
-                                                                    <li class="technology">.csv and .xlsx file parsing and generation</li>
-                                                                    <li class="technology">Responsive single page web applications</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <button type="button" class="collapsible active"><i class="fas fa-tools icon"></i> Technical Skills</button>
+                                            <div class="content" style="display: block;">
+                                                <ul>
+                                                    <li><span class="skill-title">Languages & Frameworks:</span> Node.js, .NET Core, Angular, JavaScript, C#</li>
+                                                    <li><span class="skill-title">Databases:</span> MongoDB, YugabyteDB, MariaDB</li>
+                                                    <li><span class="skill-title">Tools & Platforms:</span> Docker, OpenAPI, AWS, Google Cloud, CommerceTools, Adobe Experience Platform</li>
+                                                    <li><span class="skill-title">APIs & Integrations:</span> Amadeus Flight Search, SendGrid, Twilio, Stripe, Mailgun, Adobe Workfront</li>
+                                                </ul>
                                             </div>
-                                        </div>
-
-                                        <br/><br/>
-
-                                        <div class="d-flex flex-column mb-3">
-                                            <div class="card-transparent border-0">
-                                                <div class="row no-gutters">
-                                                    <div class="col-auto">
-                                                        <img src="images/icons/nodejs.png" class="img-fluid" alt="">
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="card-block px-2">
-                                                            <p class="card-title technology">NodeJS (1.2 years of experience)</p>
-                                                            <div class="card-text">
-                                                                <ul>
-                                                                    <li class="technology">REST API development</li>
-                                                                    <li class="technology">Microservices</li>
-                                                                    <li class="technology">Push notifications</li>
-                                                                    <li class="technology">3rd party systems integration (Stripe, Mailgun, Twilio, SendGrid)</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <button type="button" class="collapsible active"><i class="fas fa-project-diagram icon"></i> Project Contributions</button>
+                                            <div class="content" style="display: block;">
+                                                <ul>
+                                                    <li><span class="skill-title">E-commerce Solutions:</span> Led backend development for sports club and international distributor projects.</li>
+                                                    <li><span class="skill-title">PoC Platforms:</span> Built and integrated platforms for airline and car rental companies.</li>
+                                                    <li><span class="skill-title">Financial Management Applications:</span> Developed backend for managing financial assets.</li>
+                                                    <li><span class="skill-title">Automotive Dashboards:</span> Contributed to design and implementation for truck manufacturers.</li>
+                                                </ul>
                                             </div>
-                                        </div>
-
-                                        <div class="row mbc-5">
-                                            <div class="col-md-12">
-                                                <h1 class="d-flex flex-row mb-3 skill-underline">
-                                                    <div class="">
-                                                    </div>
-                                                    <div class="p-2">
-                                                        <p class="technology-title font-weight-bolder">.Net</p>
-                                                    </div>
-                                                </h1>
-
-                                                <div class="d-flex flex-column mb-3">
-                                                    <div class="card-transparent border-0">
-                                                        <div class="row no-gutters">
-                                                            <div class="col-auto">
-                                                                <img src="images/icons/csharp.png" class="img-fluid" alt="">
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="card-block px-2">
-                                                                    <p class="card-title technology">C# (0.5 years of experience)</p>
-                                                                    <div class="card-text">
-                                                                        <ul>
-                                                                            <li class="technology">Rest API development</li>
-                                                                            <li class="technology">Project maintenance</li>
-                                                                            <li class="technology">3rd party service integration(SendGrid)</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
+                                            <button type="button" class="collapsible active"><i class="fas fa-chalkboard-teacher icon"></i> Mentoring & Training</button>
+                                            <div class="content" style="display: block;">
+                                                <ul>
+                                                    <li>Conducted training sessions on new technologies and onboarding processes, enhancing team skills and reducing onboarding time by 50%.</li>
+                                                </ul>
+                                            </div>
+                                            <button type="button" class="collapsible active"><i class="fas fa-tasks icon"></i> Project Management</button>
+                                            <div class="content" style="display: block;">
+                                                <ul>
+                                                    <li>Regularly updated stakeholders, managed task allocation, and ensured alignment with project goals.</li>
+                                                </ul>
+                                            </div>
+                                            <button type="button" class="collapsible active"><i class="fas fa-clipboard-check icon"></i> Quality Assurance</button>
+                                            <div class="content" style="display: block;">
+                                                <ul>
+                                                    <li>Established and enforced coding standards, conducted pull request reviews, and documented processes for clarity and future development.</li>
+                                                </ul>
                                             </div>
                                         </div>
-
-                                        <div class="row mbc-5">
-                                            <div class="col-md-12">
-                                                <h1 class="d-flex flex-row mb-3 skill-underline">
-                                                    <div class="">
-                                                    </div>
-                                                    <div class="p-2">
-                                                        <p class="technology-title font-weight-bolder">Documentation</p>
-                                                    </div>
-                                                </h1>
-
-                                                <div class="d-flex flex-column mb-3">
-                                                    <div class="card-transparent border-0">
-                                                        <div class="row no-gutters">
-                                                            <div class="col-auto">
-                                                                <img src="images/icons/markdown.png" class="img-fluid" alt="">
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="card-block px-2">
-                                                                    <p class="card-title technology">Markdown (1 year of experience) </p>
-                                                                    <div class="card-text">
-                                                                        <ul>
-                                                                            <li class="technology">Basic documentation</li>
-                                                                            <li class="technology">Use of Hexo and Madoko to generate static websites</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="row mbc-5">
-                                            <div class="col-md-12">
-                                                <h1 class="d-flex flex-row mb-3 skill-underline">
-                                                    <div class="p-2">
-                                                        <p class="technology-title font-weight-bolder">Databases</p>
-                                                    </div>
-                                                </h1>
-
-                                                <div class="d-flex flex-column mb-3">
-                                                    <div class="card-transparent border-0">
-                                                        <div class="row no-gutters">
-                                                            <div class="col-auto">
-                                                                <img src="images/icons/mongodb.png" class="img-fluid" alt="">
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="card-block px-2">
-                                                                    <p class="card-title technology">MongoDB (1.2 years year of experience)</p>
-                                                                    <div class="card-text">
-                                                                        <ul>
-                                                                            <li class="technology">CRUD operations</li>
-                                                                            <li class="technology">Scripting, setting up the project structure</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <br /><br />
-
-                                                <div class="d-flex flex-column mb-3">
-                                                    <div class="card-transparent border-0">
-                                                        <div class="row no-gutters">
-                                                            <div class="col-auto">
-                                                                <img src="images/icons/mysql.png" class="img-fluid" alt="">
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="card-block px-2">
-                                                                    <p class="card-title technology">MySQL (0.5 years year of experience)</p>
-                                                                    <div class="card-text">
-                                                                        <ul>
-                                                                            <li class="technology">CRUD operations</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <br /><br />
-
-                                                <div class="d-flex flex-column mb-3">
-                                                    <div class="card-transparent border-0">
-                                                        <div class="row no-gutters">
-                                                            <div class="col-auto">
-                                                                <img src="images/icons/sqlserver.png" class="img-fluid" alt="">
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="card-block px-2">
-                                                                    <p class="card-title technology">SqlServer (0.5 years year of experience)</p>
-                                                                    <div class="card-text">
-                                                                        <ul>
-                                                                            <li class="technology">CRUD operations</li>
-                                                                            <li class="technology">Basics of stored procedures</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="row mbc-5">
-                                            <div class="col-md-12">
-                                                <h1 class="d-flex flex-row mb-3 skill-underline">
-                                                    <div class="p-2">
-                                                        <p class="technology-title font-weight-bolder">Version Control</p>
-                                                    </div>
-                                                </h1>
-
-                                                <div class="d-flex flex-column mb-3">
-                                                    <div class="card-transparent border-0">
-                                                        <div class="row no-gutters">
-                                                            <div class="col-auto">
-                                                                <img src="images/icons/git.png" class="img-fluid" alt="">
-                                                            </div>
-                                                            <div class="col">
-                                                                <div class="card-block px-2">
-                                                                    <p class="card-title technology">Git (1.5 years year of experience)</p>
-                                                                    <div class="card-text">
-                                                                        <ul>
-                                                                            <li class="technology">Usual operations for using the protocol</li>
-                                                                            <li class="technology">Basic CI/CD setup</li>
-                                                                            <li class="technology">Worked with GitHub and BitBucket</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <div class="row mbc-5">
-                                            <div class="col-md-12">
-                                                <h1 class="d-flex flex-row mb-3 skill-underline">
-                                                    <div class="p-2">
-                                                        <p class="technology-title font-weight-bolder">3rd party services</p>
-                                                    </div>
-                                                </h1>
-
-                                                <div class="d-flex flex-column mb-3">
-                                                    <div class="card-transparent border-0">
-                                                        <div class="row no-gutters">
-                                                            <div class="col-auto">
-                                                                <img src="images/icons/stripe.png" class="img-fluid" alt=""></div>
-                                                            <div class="col">
-                                                                <div class="card-block px-2">
-                                                                    <p class="card-title technology">Stripe (1.2 years year of experience)</p>
-                                                                    <div class="card-text">
-                                                                        <ul>
-                                                                            <li class="technology">Complex payments flow</li>
-                                                                            <li class="technology">Setting up flows within the platform for easy debugging</li>
-                                                                            <li class="technology">Knowhow regarding total overall costs on complex flows</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <br /> <br />
-
-                                                <div class="d-flex flex-column mb-3">
-                                                    <div class="card-transparent border-0">
-                                                        <div class="row no-gutters">
-                                                            <div class="col-auto">
-                                                                <img src="images/icons/twilio.png" class="img-fluid" alt=""></div>
-                                                            <div class="col">
-                                                                <div class="card-block px-2">
-                                                                    <p class="card-title technology">Twilio (0.5 years year of experience)</p>
-                                                                    <div class="card-text">
-                                                                        <ul>
-                                                                            <li class="technology">Integration within backend applications</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <br/> <br/>
-
-                                                <div class="d-flex flex-column mb-3">
-                                                    <div class="card-transparent border-0">
-                                                        <div class="row no-gutters">
-                                                            <div class="col-auto">
-                                                                <img src="images/icons/sendgrid.png" class="img-fluid" alt=""></div>
-                                                            <div class="col">
-                                                                <div class="card-block px-2">
-                                                                    <p class="card-title technology">Sendgrid (0.5 years year of experience)</p>
-                                                                    <div class="card-text">
-                                                                        <ul>
-                                                                            <li class="technology">Integration within backend applications</li>
-                                                                            <li class="technology">Responsive email templates</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <br /> <br />
-
-                                                <div class="d-flex flex-column mb-3">
-                                                    <div class="card-transparent border-0">
-                                                        <div class="row no-gutters">
-                                                            <div class="col-auto">
-                                                                <img src="images/icons/mailgun.png" class="img-fluid" alt=""></div>
-                                                            <div class="col">
-                                                                <div class="card-block px-2">
-                                                                    <p class="card-title technology">Mailgun (0.5 years year of experience)</p>
-                                                                    <div class="card-text">
-                                                                        <ul>
-                                                                            <li class="technology">Integration within backend applications</li>
-                                                                            <li class="technology">Responsive email templates</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <script>
+                                        var coll = document.getElementsByClassName("collapsible");
+                                        var i;
+                                    
+                                        for (i = 0; i < coll.length; i++) {
+                                            coll[i].addEventListener("click", function() {
+                                                this.classList.toggle("active");
+                                                var content = this.nextElementSibling;
+                                                if (content.style.display === "block") {
+                                                    content.style.display = "none";
+                                                } else {
+                                                    content.style.display = "block";
+                                                }
+                                            });
+                                        }
+                                    </script>
+                                    
 
 
-                                    </div>
-                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade fs-20" id="contact">
                                 <div class="row">
@@ -489,12 +245,11 @@
                                                 <br/>
                                                 <button type="submit" class="btn">Send</button>
                                             </form>
-                                            <p>&nbsp;</p>
+                                            <p></p>
+                                            <a href="https://github.com/RORVI/personalWebsite/raw/master/files/Roman-Ovidiu-CV.pdf" target="_blank" class="btn btn-info">Download my Resume!</a>
                                         </div>
-                                        <p class="technology">For more details:</p>
-                                        <p><a href="https://github.com/RORVI/personalWebsite/raw/master/files/Roman-Ovidiu-CV.pdf" target="_blank" class="btn btn-info">Download my Resume!</a></p>
                                     </div>
-                                </div>
+                                </div>                                
                             </div>
                         </div>
                     </div>

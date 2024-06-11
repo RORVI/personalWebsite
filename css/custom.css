@@ -10,6 +10,41 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
     font-weight: 400;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.home-motto {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.slimScroll {
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.hero-header {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
 }
 
 
@@ -44,8 +79,33 @@ h6 {
 
 /* button style */
 
+.contact-textbox {
+    border-radius: 5px;
+    width: 100%; /* Ensure the same length */
+    margin-bottom: 10px; /* Add spacing between elements */
+  }
+  
+  .contact-buttons {
+    width: 100%; /* Ensure buttons are the same length */
+  }
+  
+.btn-blue {
+    width: 100%;
+    background-color: rgb(74, 161, 255);
+    color: white;
+
+    border: 0;
+    font-size: 16px;
+    padding: 10px 30px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+
+    border-radius: 5px;
+  }
+
 .btn,
 .btn.disabled {
+    width: 100%;
     background: #f44336;
     color: #ffffff;
     border: 0;
@@ -74,19 +134,129 @@ label {
     font-weight: 400;
 }
 
-.emailInput {
-    border-color: #969696;
-    border-style: solid;
-    border-width: 1px;
+.emailInput, .messageInput {
+    width: 400px; /* Match the width of the buttons */
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px auto; /* Center align */
+    border: 1px solid #969696;
+    border-radius: 5px;
 }
 
 .messageInput {
-    border-color: #969696;
-    border-style: solid;
-    border-width: 1px;
-    width: 300%;
-    height: 250px;
+    height: 300px;
 }
+
+
+/* Ensure the container for the avatar and content is responsive */
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; /* Align items to the start */
+    max-width: 100%; /* Ensure it doesn't exceed the width of the viewport */
+  }
+  
+  .avatar {
+    flex: 0 0 auto; /* Prevent flex resizing */
+    max-width: 150px; /* Set a maximum width */
+    width: 100%; /* Ensure the width is responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between avatar and content */
+  }
+  
+  .content {
+    flex: 1 1 auto; /* Allow flexibility for resizing */
+    padding: 10px; /* Adjust padding as needed */
+    max-width: calc(100% - 170px); /* Ensure content and avatar fit within the container */
+  }
+  
+  /* Ensure proper layout on smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center align items */
+    }
+  
+    .avatar {
+      max-width: 100px; /* Adjust size for smaller screens */
+      margin: 0 0 20px 0; /* Space below the avatar */
+    }
+  
+    .content {
+      max-width: 100%; /* Allow content to take full width */
+    }
+  }
+
+  
+  
+  .skills-section {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+}
+.skills-section h1 {
+    text-align: center;
+    color: #231516;
+}
+.skills-section h2 {
+    color: #555;
+}
+.skills-section .collapsible {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 10px;
+    position: relative;
+}
+.skills-section .collapsible::after {
+    content: '\f078'; /* Unicode for down arrow */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 10px;
+    transition: transform 0.3s;
+}
+.skills-section .active::after {
+    transform: rotate(180deg);
+}
+.skills-section .active, .skills-section .collapsible:hover {
+    background-color: #ed5564;
+}
+.skills-section .content {
+    padding: 0 18px;
+    display: block; /* Make sections unfolded by default */
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+.skills-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.skills-section li {
+    background: #e4e4e4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.skills-section .skill-title {
+    font-weight: bold;
+    color: #231516;
+}
+.skills-section .icon {
+    margin-right: 10px;
+}
+
+  
+  
 
 
 /* Styling for the tooltips*/
@@ -118,8 +288,12 @@ label {
 
 .emailForm {
     margin: 0px;
-    width: 70%;
+    width: 100%;
     padding-left: 0px;
+}
+
+.emailForm .btn {
+    width: 200px; /* Ensure both buttons are the same width */
 }
 
 .contactConstraints {
@@ -196,7 +370,15 @@ body {
     display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
+
+    width: 40px;
+    height: 40px;
 }
+
+.home-text {
+    text-align: center;
+    margin-top: 20vh;
+  }
 
 .text-main-small {
     font-size: 1.5vw;
@@ -213,12 +395,37 @@ body {
 
 .technology-title {
     font-size: 2.0vw;
-    padding-bottom: 0px;
+    margin: 5px;
 }
+  
+  .experience {
+    color: black;
+    font-size: 12px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .experience-icon {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgb(73, 186, 73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+  }
+  
+  .experience-icon::before {
+    content: '✔';
+    color: white;
+    font-size: 10px;
+  }
+  
 
-.technology {
-    font-size: 1.0vw;
-    padding-bottom: 0px;
+.check {
+    color: #00ff00;
 }
 
 .background {
@@ -301,6 +508,11 @@ body {
     font-weight: 900;
 }
 
+.nav-item.active {
+    background-color: #ddd;
+    color: #000;
+  }
+
 .event-tab .nav-tabs>li>a {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.28);
@@ -329,6 +541,11 @@ body {
 
 .event-tab .tab-content .tab-pane {
     margin-bottom: 30px;
+}
+
+.home-motto {
+    text-align: left;
+    margin-top: 20vh;
 }
 
 .ticketBox {
@@ -531,10 +748,28 @@ iframe {
     font-weight: 600;
 }
 
-.contactForm .btn {
-    width: 100%;
+.contactForm {
+    width: 400px;
 }
 
+.btn, .btn-info {
+    display: inline-block;
+    width: auto; /* Ensure the width is based on the content */
+    min-width: 400px; /* Set a minimum width if needed */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #ed5564;
+    border: none;
+    cursor: pointer;
+    margin: 5px auto; /* Center align */
+}
+
+.btn-info {
+    background-color: #007bff; /* Adjust as needed */
+    width: 400px;
+}
 
 /* side modal style */
 
