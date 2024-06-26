@@ -1,9 +1,21 @@
-/* Stage- Bootstrap one page Event ticket booking theme 
-Created by pixpalette.com - online design magazine */
-
 $(window).on('load', function(){
     // Animate loader off screen
-    $(".loader").fadeOut("slow");
+    $(".loader").fadeOut("slow");if (window.innerWidth > 700 && window.screen.orientation.angle == 0) {
+        var PleaseRotateOptions = {
+            onlyMobile: true,
+            forcePortrait: false,
+            allowClickBypass: false,
+            subMessage: "",
+        };
+    } else {
+        var PleaseRotateOptions = {
+            onlyMobile: true,
+            forcePortrait: true,
+            allowClickBypass: false,
+            subMessage: "",
+        };
+    }
+    
 });
 
 $(document).on("click", ".tab-controll" , function(e) {
