@@ -446,7 +446,7 @@ body {
     padding: 20px;
     z-index: 5;
     position: fixed;
-    background: url(../images/desk_background.jpg);
+    background: url(../images/desk_background.webp);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
